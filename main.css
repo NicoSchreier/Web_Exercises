@@ -1,0 +1,167 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Bahnschrift, cursive;
+}
+
+main {
+    overflow: auto;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    display: inline;
+}
+
+h2 {
+    text-align: left;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 0;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+    "c1 c1"
+    "c2 c2"
+    "c3 c3"
+    "c5 c4";
+    height: 100%;
+}
+
+#i1 {
+    grid-area: c1;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+#i2 {
+    grid-area: c2;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+#i3 {
+    grid-area: c3;
+}
+
+#i4 {
+    grid-area: c4;
+    text-align: right;
+    padding: 5px;
+}
+
+#i5 {
+    grid-area: c5;
+    text-align: center
+}
+
+#cart {
+    text-align: right;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        grid-template-areas:
+    "c1 c1 c1"
+    "c2 c3 c4"
+    "c5 c5 c5";
+    }
+
+    html, body {
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    }
+
+    header {
+        margin: 15px;
+    }
+
+    #i1 {
+        background-image: none;
+    }
+
+    #i2 {
+        background-image: none;
+    }
+
+    #i3 {
+        background-image: none;
+        background-color: white;
+    }
+
+    #i4 {
+        background-image: none;
+    }
+
+    #i5 {
+        background-image: none;
+    }
+
+    .flex-container {
+        display: block;
+        margin: 20px;
+        padding: 5px;
+        line-height: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        font-size: 80%;
+    }
+
+    html, body {
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    }
+
+    header {
+        margin: 10px;
+    }
+
+    #i1 {
+        background-image: none;
+    }
+
+    #i2 {
+        background-image: none;
+    }
+
+    #i3 {
+        background-image: none;
+        background-color: white;
+    }
+
+    #i4 {
+        background-image: none;
+        background-color: cornflowerblue;
+    }
+
+    #i5 {
+        background-image: none;
+        background-color: cornflowerblue;
+    }
+
+}

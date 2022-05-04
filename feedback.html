@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1 - Feedback.svg</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+<h1>Website Feedback Form</h1>
+<form action="main.html">
+    <fieldset>
+        <legend>Is this the first time you have visited the website?</legend>
+        <label>
+            <input type="radio" name="radio_1">
+            yes
+        </label>
+        <label>
+            <input type="radio" name="radio_1">
+            no
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>What is the <strong>primary</strong> reason you came to the website?</legend>
+        <label>
+            <textarea name="text1" rows="5" cols="26"></textarea>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Did you find what you needed?</legend>
+        <label>
+            <input type="radio" name="radio_2">
+            Yes, all of it
+        </label>
+        <label>
+            <input type="radio" name="radio_2">
+            Yes, some of it
+        </label>
+        <label>
+            <input type="radio" name="radio_2">
+            No, none of it
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>If you did not find any or all of what you needed, please tell us what information
+            you were looking for.
+        </legend>
+
+        <label>
+            <textarea name="text2" rows="5" cols="26"></textarea>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Please tell us how easy it is to find information on the site.</legend>
+
+        <label>
+            <input type="radio" name="radio_3">
+            Very easy
+        </label>
+        <label>
+            <input type="radio" name="radio_3">
+            Easy
+        </label>
+        <label>
+            <input type="radio" name="radio_3">
+            Average
+        </label>
+        <label>
+            <input type="radio" name="radio_3">
+            Difficult
+        </label>
+        <label>
+            <input type="radio" name="radio_3">
+            Very Difficult
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>What is the overall impression of the site?</legend>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>Below Expectations</th>
+                <th>Meets Expectations</th>
+                <th>Exceeds Expectations</th>
+            </tr>
+            <tr>
+                <td>Professional</td>
+                <td>
+                    <label>
+                        <input type="radio" name="radio_4">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" name="radio_4">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" name="radio_4">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Informative</td>
+                <td>
+                    <label>
+                        <input type="radio" name="radio_5">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" name="radio_5">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" name="radio_5">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Visually Pleasing</td>
+                <td>
+                    <label>
+                        <input type="radio" name="radio_6">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" name="radio_6">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" name="radio_6">
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <p>Please add any comments you have for improving the website. We welcome suggestions on
+        specific areas for improvements, features you would like to see to the site, and examples
+        of what you consider good websites.</p>
+
+    <fieldset>
+        <legend>Comments</legend>
+
+        <label>
+            <textarea name="text3" rows="5" cols="26"></textarea>
+        </label>
+    </fieldset>
+
+    <fieldset class="data_left">
+        <legend>We would like to know a little bit about you</legend>
+
+        <label class="contact">eMail:</label>
+        <label>
+            <input name="email" type="email" placeholder="user@example.com" class="contact" required>
+        </label>
+        <label class="contact">Your Homepage:</label>
+        <label>
+            <input name="homepage" type="url" placeholder="http://www.example.com/" class="contact">
+        </label>
+        <label class="contact">Date of birth:</label>
+        <label>
+            <input name="birthdate" type="date" class="contact">
+        </label>
+    </fieldset>
+
+    <p><input name="send" type="submit" value="Send" id="send"></p>
+
+</form>
+
+</body>
+</html>
